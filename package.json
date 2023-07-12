@@ -20,6 +20,12 @@
       "last 1 safari version"
     ]
   },
+  "imports": {
+    "#*": "./src/*",
+    "#app/*": "./src/app/*",
+    "#components/*": "./src/components/*",
+    "#features/*": "./src/features/*"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
