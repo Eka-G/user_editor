@@ -1,0 +1,10 @@
+$primary-font-color: #3a3a3a;
+$primary-bg-color: #ffffff;
+$second-font-color: #ffffff;
+$second-bg-color: #8fb4f4;
+
+@mixin flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

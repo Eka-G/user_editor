@@ -24,7 +24,8 @@
     "#*": "./src/*",
     "#app/*": "./src/app/*",
     "#components/*": "./src/components/*",
-    "#features/*": "./src/features/*"
+    "#features/*": "./src/features/*",
+    "#styles/*": "./src/styles/*"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",

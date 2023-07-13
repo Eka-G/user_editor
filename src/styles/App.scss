@@ -1,0 +1,21 @@
+@use "variables";
+
+.app {
+  text-align: center;
+
+  &__header {
+    @include variables.flex-centered;
+
+    padding: 24px;
+    font-size: 32px;
+    font-weight: bold;
+    color: variables.$second-font-color;
+    background-color: variables.$second-bg-color;
+  }
+
+  &__content {
+    @include variables.flex-centered;
+
+    margin: 40px;
+  }
+}

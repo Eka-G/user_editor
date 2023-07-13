@@ -1,0 +1,20 @@
+@use "../../styles/variables";
+
+.list {
+  width: 300px;
+  height: 400px;
+  overflow: auto;
+
+  &__btn {
+    padding: 5px 10px;
+    width: 100%;
+    text-align: start;
+    border: none;
+    background-color: variables.$primary-bg-color;
+    cursor: pointer;
+  }
+
+  &__btn:hover  {
+    background-color: #bedcff;
+  }
+}
