@@ -1,5 +1,5 @@
 import React from "react";
-import { UserList } from "#components";
+import { ProfilePanel, UserList } from "#components";
 import "#styles/App.scss";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       </header>
       <main className="app__content">
         <UserList />
+        <ProfilePanel />
       </main>
     </div>
   );
