@@ -1,35 +1,27 @@
+import { useSelector } from "react-redux";
+import { selectCurrentProfile } from "#features/profiles/profilesSlice";
+import { ProfileForm } from "#components";
 import styles from "./style.module.scss";
 
 function ProfilePanel() {
+  const currentProfile = useSelector(selectCurrentProfile);
+  const mainLabel = currentProfile
+    ? `${currentProfile.name} ${currentProfile.surname}`
+    : "Select profile";
+
   return (
     <div className={styles.profile}>
       <div className={styles.profile__label}>
-        <span>User</span>
+        <span>{mainLabel}</span>
       </div>
 
       <img src="avatar.svg" alt="avatar" width="100" height="100" />
 
-      <div className={styles.profile__info}>
-        <label for="name" className={styles.profile__field_label}>
-          Name:
-        </label>
-        <input id="name" name="name" />
-
-        <label for="surname" className={styles.profile__field_label}>
-          Surname:
-        </label>
-        <input id="surname" name="surname" />
-
-        <label for="age" className={styles.profile__field_label}>
-          Age:
-        </label>
-        <input id="age" name="age" />
-
-        <label for="email" className={styles.profile__field_label}>
-          Email:
-        </label>
-        <input id="email" name="email" />
-      </div>
+      {currentProfile ? (
+        <ProfileForm />
+      ) : (
+        <p>Please, check the list and choose user</p>
+      )}
     </div>
   );
 }

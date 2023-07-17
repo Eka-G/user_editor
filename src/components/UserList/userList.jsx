@@ -15,7 +15,7 @@ function UserList() {
         <li key={user.id}>
           <button
             className={styles.list__btn}
-            onClick={() => dispatch(setCurrentProfile(user))}
+            onClick={() => dispatch(setCurrentProfile({ ...user, index: i }))}
           >
             {`${i + 1}. ${user.name} ${user.surname}`}
           </button>

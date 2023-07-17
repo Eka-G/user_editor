@@ -1,0 +1,20 @@
+@use "../../styles/variables";
+
+.form {
+  &__save_btn {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:active {
+      background-color: variables.$second-bg-color;
+    }
+  }
+
+  &__error {
+    display: block;
+    color: variables.$error-font-color;
+  }
+}
