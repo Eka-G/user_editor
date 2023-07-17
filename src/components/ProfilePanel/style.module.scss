@@ -23,3 +23,9 @@
     grid-area: info;
   }
 }
+
+@media (max-width: 576px) {
+  .profile {
+    width: 320px;
+  }
+}

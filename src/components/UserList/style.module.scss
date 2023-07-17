@@ -18,3 +18,16 @@
     background-color: #bedcff;
   }
 }
+
+@media (max-width: 768px) {
+  .list {
+    width: 400px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .list {
+    width: 320px;
+  }
+}

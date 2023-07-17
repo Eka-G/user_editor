@@ -19,3 +19,13 @@
     margin: 40px;
   }
 }
+
+@media (max-width: 768px) {
+  .app {
+    &__content {
+      margin: 20px;
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+  }
+}

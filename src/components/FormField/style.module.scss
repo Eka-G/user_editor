@@ -23,3 +23,11 @@
     color: variables.$error-font-color;
   }
 }
+
+@media (max-width: 576px) {
+  .field {
+    &__input {
+      width: 130px;
+    }
+  }
+}
